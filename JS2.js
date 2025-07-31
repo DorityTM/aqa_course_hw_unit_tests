@@ -1,0 +1,11 @@
+let n = 3;
+let nn = n + "5";
+nn = +nn;
+console.log(nn);
+console.log(typeof nn);
+let nnn = nn + "7";
+nnn = +nnn;
+console.log(nnn);
+console.log(typeof nnn);
+let sum = (n + nn + nnn);
+console.log(sum);

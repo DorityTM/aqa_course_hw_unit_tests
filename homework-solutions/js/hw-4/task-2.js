@@ -6,8 +6,8 @@
   2. Создать переменную "maxAge" и присвоить ей значение 60
   3. Создать переменную "age", в которую вы будете вводить возраст при выполнении программы
   4. Добавьте проверку: если тип данных в переменной age не number - вывести в консоль Incorrect data type
-  4. Созда0ть if в котором будете проверять весь код переменной age со следующими условиями:
-    - Если age меньше чем mmbeinAge, вывести в консоль "You don't have access cause your age is " + "age" + " It's less then "
+  4. Создать if в котором будете проверять весь код переменной age со следующими условиями:
+    - Если age меньше чем minAge, вывести в консоль "You don't have access cause your age is " + "age" + " It's less then "
     - Если "age" больше либо равно  minAge и меньше  maxAge, вывести в консоль "Welcome  !"
     - Если "age" больше maxAge, вывести в консоль "Keep calm and look Culture channel".
     - Иначе выводите "Technical work".

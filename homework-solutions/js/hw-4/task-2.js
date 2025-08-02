@@ -14,3 +14,32 @@
   5. Проверить задание со следующими значениями в переменной age: 10, 17, 18, 19, 59, 60, 61
 
   */
+/*const minAge = 18;
+const maxAge = 60;
+let age = "61";
+
+if (typeof age != 'number') {
+	console.log(`Technical work`);
+	} else if (age < minAge) {
+	console.log(`You don\'t have access cause your age is ${age}. It\'s less then ${minAge}.`);
+	} else if (age >= minAge && age <= maxAge) {
+	console.log(`Welcome ${age}!`);
+	} else if (age > maxAge) {
+	console.log(`Keep calm and look Culture channel`);
+}*/
+
+const minAge = 18;
+const maxAge = 60;
+let age = "25 years old";
+
+if (typeof age !== 'number') {
+    console.log(`Technical work`);
+  } else {
+    if (age < minAge) {
+	  console.log(`You don\'t have access cause your age is ${age}. It\'s less then ${minAge}.`);
+  } else if (age >= minAge && age <= maxAge) {
+    console.log(`Welcome ${age}!`);
+  } else {
+    console.log(`Keep calm and look Culture channel`);
+  }
+}

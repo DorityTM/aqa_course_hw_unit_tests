@@ -7,6 +7,9 @@
   */
   const salary = 1000;
   if (salary >= 1000)
-{console.log(grade = "middle");}
+{
+  grade = "middle";
+  console.log(grade);
+}
 else if (salary < 1000)
 {console.log(grade = "junior");}

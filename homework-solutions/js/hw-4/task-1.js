@@ -11,5 +11,7 @@
   grade = "middle";
   console.log(grade);
 }
-else if (salary < 1000)
-{console.log(grade = "junior");}
+else if (salary < 1000) {
+  grade = "junior";
+  console.log(grade);
+}

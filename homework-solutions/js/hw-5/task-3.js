@@ -8,10 +8,11 @@ const word = 'hello';
 let vowelsAndConsonantsResult = '';
 const vowels = 'aeiou';
 let vowelsCount = 0;
-let consonantsCount = 0
+let consonantsCount = 0;
+const LowerCaseWord = word.toLowerCase();
 
-for (let i = 0; i < word.length; i++) {
-    const char = word[i];     
+for (let i = 0; i < LowerCaseWord.length; i++) {
+    const char = LowerCaseWord[i];     
     if (vowels.includes(char)) {
     vowelsCount ++;
         } else if (/[a-zA-Z]/.test(char)) {

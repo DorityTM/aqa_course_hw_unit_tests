@@ -43,3 +43,4 @@ if (typeof age !== 'number') {
   } else {
     console.log(`Keep calm and look Culture channel`);
   }
+  }

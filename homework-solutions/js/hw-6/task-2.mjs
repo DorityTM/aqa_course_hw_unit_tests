@@ -13,8 +13,8 @@ const competitorPizzas = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawa
 const myPizzasT1 = ['Peperoni', 'Margherita', 'Diablo', 'Vegetarian'];
 const myPizzasT2 = ['Peperoni', 'Caprichosa', 'Diablo', '4 cheeses', 'hawai'];
 
-let resultUnique = [];
-let resultNull = null;
+let resultUnique;
+let resultNull;
 
 const competitorLower = competitorPizzas.map(p => p.toLowerCase());
 

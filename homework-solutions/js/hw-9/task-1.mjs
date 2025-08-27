@@ -23,13 +23,19 @@ const logSpy = jest.spyOn(console, 'log');
 // ---
 
 // Ваш код
-let keyValuePairs = Object.entries(character)
-for (let i = 0; i < keyValuePairs.length; i++) {
-  const [key, value] = keyValuePairs[i];
-  console.log(`key = ${key}, value = ${value}`);
-}
+// let keyValuePairs = Object.entries(character)
+// for (let i = 0; i < keyValuePairs.length; i++) {
+//   const [key, value] = keyValuePairs[i];
+//   console.log(`key = ${key}, value = ${value}`);
+// }
 //console.log(keyValuePairs);
 
+let keyValuePairs = Object.entries(character)
+for (let i = 0; i < keyValuePairs.length; i++) {
+    keyValuePairs.forEach(([key, value]) => {
+        console.log(`key = ${key}, value = ${value}`);
+    });
+}
 // 4
 let hasSalaryKey1stOption = 'salary' in character;
 let hasSalaryKey2ndOption = Object.hasOwn(character, 'salary');

@@ -1,16 +1,21 @@
 class Employee {
 	#salary;
 
-	constructor(firstName, lastName, profession, salary) {
+constructor(firstName, lastName, profession, salary) {
+		if (typeof firstName !== 'string') throw new Error('First Name must be a string');
 		this._firstName = firstName;
-		this._lastName = lastName;
-		this._profession = profession;
-		this.#salary = salary;
 
-		  if (typeof firstName !== 'string') throw new Error('First Name must be a string');
-		  if (typeof lastName !== 'string') throw new Error('Last Name must be a string');
-		  if (typeof profession !== 'string') throw new Error('Profession must be a string');
-		  if (typeof salary !== 'number') throw new Error('Salary must be a number');
+
+		if (typeof lastName !== 'string') throw new Error('Last Name must be a string');
+		this._lastName = lastName;
+
+
+		if (typeof profession !== 'string') throw new Error('Profession must be a string');
+		this._profession = profession;
+
+
+		if (typeof salary !== 'number') throw new Error('Salary must be a number');
+		this.#salary = salary;
 	}
 
 	get firstName() {

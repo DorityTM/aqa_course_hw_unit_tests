@@ -7,32 +7,52 @@
 //   - Пароль не должен состоять из одних пробелов
 // Функция должна возвращать false, если хотя бы одно из условий не выполнено.
 
+//function validatePassword(password: string): boolean {
+//if (password.length < 8) {
+//    return false && new Error("Password should be at least 8 characters long");
+//} else if (!/[A-Z]/.test(password)) {
+//    return false && new Error("Password should contain at least one uppercase letter");
+//} else if (!/[a-z]/.test(password)) {
+//    return false && new Error("Password should contain at least one lowercase letter");
+//} else if (!/[0-9]/.test(password)) {
+//    return false && new Error("Password should contain at least one number");
+//} else if (!/\S/.test(password)) {
+//    return false && new Error("Password should not consist of only whitespaces");
+//}
+//return true;
+//};
+
 function validatePassword(password: string): boolean {
 if (password.length < 8) {
-    return false && new Error("Password should be at least 8 characters long");
+    console.log("Password should be at least 8 characters long")
+    return false;
 } else if (!/[A-Z]/.test(password)) {
-    return false && new Error("Password should contain at least one uppercase letter");
+    console.log("Password should contain at least one uppercase letter");
+    return false;
 } else if (!/[a-z]/.test(password)) {
-    return false && new Error("Password should contain at least one lowercase letter");
+    console.log("Password should contain at least one lowercase letter");
+    return false;
 } else if (!/[0-9]/.test(password)) {
-    return false && new Error("Password should contain at least one number");
+    console.log("Password should contain at least one number");
+    return false;
 } else if (!/\S/.test(password)) {
-    return false && new Error("Password should not consist of only whitespaces");
+    console.log("Password should not consist of only whitespaces");
+    return false;
 }
 return true;
 };
 
 console.log(validatePassword("ptFA45Z7g"));
+console.log(validatePassword("abcdEFG1"));
+console.log(validatePassword("abcD1   "));
+console.log(validatePassword("A1b2C3d4"));
 console.log(validatePassword("Dtm5m35"));
 console.log(validatePassword("12345678"));
 console.log(validatePassword("abcdefgh"));
 console.log(validatePassword("ABCDEFGH"));
 console.log(validatePassword("abcdEFGH"));
-console.log(validatePassword("abcdEFG1"));
 console.log(validatePassword("        "));
-console.log(validatePassword("abcD1   "));
 console.log(validatePassword("abcD1"));
 console.log(validatePassword("Abcdefg1"));
 console.log(validatePassword("A1      "));
 console.log(validatePassword("x5      "));
-console.log(validatePassword("A1b2C3d4"));

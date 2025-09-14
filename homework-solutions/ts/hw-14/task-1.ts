@@ -1,6 +1,6 @@
 
 //1. Создайте дженерик функцию wrapInArray, которая принимает значение любого типа и возвращает его в виде массива этого типа.
-    function wrapInArray<T>(result: T):[T]{
+    function wrapInArray<T>(result: T):T[]{
       return [result];
     }
 

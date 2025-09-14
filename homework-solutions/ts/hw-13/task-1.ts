@@ -66,8 +66,8 @@ type DiscountedProduct = Product & {
 // 6. Создайте функцию calculateDiscount, которая принимает объект типа DiscountedProduct и возвращает итоговую цену с учетом скидки. 
 //    Затипизировать явно и входные и выходные данные. Используйте следующие данные:
 
-function calculateDiscount(DiscountedProduct: DiscountedProduct): number {
-    return DiscountedProduct.price - (DiscountedProduct.price * DiscountedProduct.discount / 100);
+function calculateDiscount(discountedProduct: DiscountedProduct): number {
+    return discountedProduct.price - (discountedProduct.price * discountedProduct.discount / 100);
 };
 
    const product: DiscountedProduct = {

@@ -12,7 +12,7 @@
 
 //2. Создайте дженерик функцию getLastElement, которая принимает массив элементов типа T, и возвращает последний элемент (типа T).
 
-    function getLastItem<T>(arr: T[]): T | unknown  {
+    function getLastItem<T>(arr: T[]): T | undefined {
         if (Array.isArray(arr) && arr.length > 0) {
             return arr[arr.length - 1]
         }

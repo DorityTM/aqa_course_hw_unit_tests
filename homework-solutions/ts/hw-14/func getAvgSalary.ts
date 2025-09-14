@@ -14,8 +14,8 @@ const employees: IEmployee[] = [
   { id: 3, name: "Anatoliy", position: "Lead AQA",  salary: 7000 },
 ];
 
-function getAvgSalary<T extends { salary: number }>(...args: T[]) {
-return args.reduce((r, o) => r + o.salary,0 )/args.length
+function getAvgSalary <T extends { salary: number } > (...args: T[]) {
+  return args.reduce((accumulator, object) => accumulator + object.salary, 0) / args.length;
 };
 
 console.log(getAvgSalary(...employees));
